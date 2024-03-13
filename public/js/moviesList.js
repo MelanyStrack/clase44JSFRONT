@@ -3,8 +3,8 @@ window.addEventListener("load", function(){
     const h1 = document.querySelector("h1");
 
     const darkMode = window.prompt("¿Desea modo oscuro?")
-    if (darkMode) {
-        body.style.backgroundColor = "#7f7f7f​"
+    if (darkMode.toLowerCase() == "si") {
+        body.style.backgroundColor = "#7f7f7f"
         body.classList.add("fondoMoviesList")
     }
         h1.innerText="LISTADO DE PELICULAS";
@@ -12,5 +12,4 @@ window.addEventListener("load", function(){
         h1.style.backgroundColor="teal";
         h1.style.padding="20px"
         
-
 })
